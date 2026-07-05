@@ -8,6 +8,7 @@ import { Page } from '@/components/Page.tsx';
    КОНТЕНТ ВИТРИНЫ — правь только эти строки
    ───────────────────────────────────────────── */
 const CONTACT = 'Denis_On999';                  // личный @username (без @)
+const ASIBOTS_BOT = 'asibots999_bot';           // @-бот Asibots (открываем ВНУТРИ Telegram, а не сайт)
 const EXAMPLES = 'https://t.me/denis_onosov9';  // ТГ-группа с примерами AI-генераций
 const IG = 'https://instagram.com/odv999';      // Instagram
 const LINK = {
@@ -39,15 +40,15 @@ export const IndexPage: FC = () => {
         {/* Услуги / Asibots — главное, первым */}
         <Section
           header="Asibots — AI-системы для бизнеса"
-          footer="Этого бота и витрину я собрал сам — это уровень. Разберу твой бизнес и покажу, где усилить."
+          footer="Этого бота и витрину я собрал сам за час — это уровень работы."
         >
-          <Cell before={<Emoji e="🤖" />} subtitle="Клиенты и рутина на автопилоте 24/7" onClick={() => web(LINK.asibots)}>
-            Боты и автоматизация
+          <Cell before={<Emoji e="🌐" />} subtitle="Превращают трафик в заявки, а не просто красивые" onClick={() => tg(ASIBOTS_BOT)}>
+            Умные сайты
           </Cell>
-          <Cell before={<Emoji e="🌐" />} subtitle="Превращают трафик в заявки" onClick={() => web(LINK.asibots)}>
-            AI-сайты
+          <Cell before={<Emoji e="🤖" />} subtitle="Клиенты и рутина на автопилоте 24/7" onClick={() => tg(ASIBOTS_BOT)}>
+            AI-боты и автоматизация
           </Cell>
-          <Cell before={<Emoji e="📊" />} subtitle="Видит, где бизнес теряет деньги" onClick={() => tg(CONTACT)}>
+          <Cell before={<Emoji e="📊" />} subtitle="Ускоряет менеджеров или заменяет их" onClick={() => tg(ASIBOTS_BOT)}>
             CRM с AI
           </Cell>
         </Section>
